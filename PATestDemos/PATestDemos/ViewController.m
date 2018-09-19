@@ -26,6 +26,10 @@
     self.progress.circleColor = [UIColor redColor];
     self.progress.circleWidth = 6.0;
     self.progress.rate = 0.2;
+    
+    self.progress.colors = [NSArray arrayWithObjects:[UIColor blueColor].CGColor,[UIColor yellowColor].CGColor,[UIColor greenColor].CGColor, nil];
+ 
+    self.progress.attrStr = [self.progress createAttributeStringWithRate:self.progress.rate];
 
     //加动画只需加上下面这句代码
     [self.progress drawLineAnimationWithRate:0.8 duration:2.0];
